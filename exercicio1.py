@@ -28,4 +28,3 @@ def conta_palavras_unicas(frase):
         contagem += 1
     return contagem  
 
-conta_palavras_unicas()
