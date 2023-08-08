@@ -18,16 +18,10 @@
 
 
 def conta_palavras_unicas(frase):
-    contagem = 0 
-    frase = frase.split()
-    for i in range(len(frase)):
-        palavra_unicas = True
-        for y in range(len(frase)):
-            if i != y and frase[i] == frase[y]:
-                palavra_unicas = False
-                break
-        if palavra_unicas:
+    contagem = 0
+    palavras = frase.split()
+    for palavra in palavras:
+        if palavras.count(palavra) == 1:
             contagem += 1
     return contagem
-
 
