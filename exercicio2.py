@@ -1,26 +1,6 @@
-#  Se achar necessario, faça import de outras bibliotecas
-
-
-
-
-
-# Crie a função que será avaliada no exercício aqui
-
-
-
-
-
-
-
-# Teste a sua função aqui (caso ache necessário)
-
-
-
-
-
-
-
-
-
-
-
+from collections import Counter
+def is_anagram(w1, w2):
+    if Counter(w1) == Counter(w2):
+        return True
+    else:
+        return False
