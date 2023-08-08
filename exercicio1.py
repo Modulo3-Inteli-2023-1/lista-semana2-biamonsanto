@@ -17,19 +17,20 @@
 
 
 
+
 def conta_palavras_unicas(frase):
-    contagem = 0
-    palavras = frase.split()
-    contagem_palavras = {} 
+    contagem = 1 
+    frase = frase.split()
+    for i in range(len(frase) - 1):
+        for y in range(i + 1,len(frase)):
+            if frase[i] == frase[y]:
+                teste = True
+                if teste == True:
+                    contagem =+ 1 
+        contagem += 1
 
-    for palavra in palavras:
-        if palavra in contagem_palavras:
-            contagem_palavras[palavra] += 1
-        else:
-            contagem_palavras[palavra] = 1
+    print(contagem)   
 
-    for palavra, ocorrencias in contagem_palavras.items():
-        if ocorrencias == 1:
-            contagem += 1
 
-    return contagem
+conta_palavras_unicas("banana maçã maçã maçã maçã maçã maçã maçã maçã ")
+
