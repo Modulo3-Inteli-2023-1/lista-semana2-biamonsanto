@@ -29,8 +29,7 @@ def conta_palavras_unicas(frase):
                     contagem =+ 1 
         contagem += 1
 
-    print(contagem)   
+    return(contagem)   
 
 
-conta_palavras_unicas("banana maçã maçã maçã maçã maçã maçã maçã maçã ")
 
